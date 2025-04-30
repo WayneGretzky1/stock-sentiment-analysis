@@ -1,0 +1,175 @@
+.tweet-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.tweet {
+	background: white;
+	border-radius: 16px;
+	padding: 16px 20px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	width: 600px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.tweet-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.profile-img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	margin-right: 12px;
+}
+
+.name-line {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 16px;
+	color: #0f1419;
+}
+
+.username {
+	color: #536471;
+	font-size: 16px;
+}
+
+.badge {
+	width: 18px;
+	height: 18px;
+}
+
+.message {
+	font-size: 20px;
+	line-height: 1.5;
+	color: #0f1419;
+	margin: 10px 0;
+}
+
+.date {
+	color: #536471;
+	font-size: 14px;
+	margin-top: 12px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e1e8ed;
+	width: 100%;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.icon-btn {
+	all: unset;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	transition: background-color 0.2s ease;
+	border-radius: 50%;
+	position: relative;
+}
+
+.icon-btn:hover {
+	background-color: rgba(29, 155, 240, 0.1);
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+	opacity: 0.9;
+}
+
+.icon.heart,
+.icon.repost {
+	width: 30px;
+	height: 30px;
+}
+
+
+
+.heart {
+	fill: none;
+	stroke: #1da1f2;	
+	stroke-width: 2px;
+	transition: transform 0.2s ease;
+}
+.heart:hover {
+	transform: scale(1.1);
+}
+
+.heart.filled {
+	fill: #f40000;
+	stroke: #e50000;
+}
+
+.repost {
+	width: 30px;
+	height: 30px;
+}
+
+/* Glow pulse fallback effect */
+.glow {
+	animation: glowPulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+	from {
+		filter: drop-shadow(0 0 3px #f40000);
+	}
+	to {
+		filter: drop-shadow(0 0 6px #1da1f2);
+	}
+}
+/*failed and too lazy to remove it*/
+/* 🔥 RGB spinning glow ring effect */
+.glow-ring-wrapper {
+	position: relative;
+}
+
+.glow-ring::before {
+	content: "";
+	position: absolute;
+	top: -6px;
+	left: -6px;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: conic-gradient(
+		from 0deg,
+		#ff004f,
+		#ff9900,
+		#00ff90,
+		#00cfff,
+		#9900ff,
+		#ff004f
+	);
+	animation: spin 1.5s linear infinite;
+	z-index: -1;
+	mask: radial-gradient(circle at center, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+	-webkit-mask: radial-gradient(circle at center, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

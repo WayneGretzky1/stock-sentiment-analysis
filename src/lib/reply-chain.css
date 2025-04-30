@@ -1,0 +1,144 @@
+/* reply-chain.css */
+
+.reply-thread-stacked {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+
+/* Each reply bubble */
+.reply-chain {
+	position: relative;
+	width: 90%;
+	max-width: 600px;
+	background: #ffffff;
+	border-radius: 20px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+	padding: 16px;
+	margin-top: 0;
+	margin-bottom: -5px;
+	z-index: 1;
+	margin-left: 48px; /* Shift whole tweet to the right */
+}
+
+/* Stack tweets with overlap effect */
+.reply-chain:not(:first-child) {
+	margin-top: -8px;
+	padding-top: 24px;
+}
+
+/* REMOVE vertical line completely */
+.vertical-reply-line {
+	display: none;
+}
+
+/* Tweet header */
+.tweet-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.tweet-body {
+	padding-left: 52px; /* moves message, date, and icons under username */
+}
+
+
+/* Profile pic */
+.profile-img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 12px;
+	object-fit: cover;
+}
+
+/* Username and handle */
+.user-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.name-line {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.name {
+	color: #000;
+}
+
+.username {
+	color: #555;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.badge {
+	width: 16px;
+	height: 16px;
+}
+
+/* Tweet message */
+.message {
+	font-size: 16px;
+	line-height: 1.4;
+	color: #0f1419;
+	margin-bottom: 10px;
+}
+
+/* Date */
+.date {
+	color: #657786;
+	font-size: 14px;
+}
+
+/* Bottom icons */
+.actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 8px;
+}
+
+.icon-btn {
+	background: none;
+	border: none;
+	padding: 6px;
+	cursor: pointer;
+}
+
+.icon {
+	width: 18px;
+	height: 18px;
+}
+
+.heart.filled {
+	fill: #f60000;
+}
+
+.vertical-bar {
+    width: 2px; 
+    height: 75%;
+    background-color: gray; 
+    position: relative;
+    top: 4%; 
+    left: 6%;
+}
+
+
+
+
+
+
+
+
+
+
