@@ -1433,6 +1433,34 @@ let showVideo = true;
 
 	
 </section>
+
+<section class="gradient-section" id="contributions">
+	<h2>🧑‍💻 Contributions</h2>
+	<ul>
+	  <li><strong>Evan, Niketha, Sivapriya:</strong> Dataset finding, cleaning, and analysis</li>
+	  <li><strong>Mohammad, Brock:</strong> Storyboard creation</li>
+	  <li><strong>Lavanya:</strong> Presentation design, documentation, and technical support</li>
+	</ul>
+  </section>
+  
+  <section class="gradient-section" id="acknowledgments">
+	<h2>🙏 Acknowledgments</h2>
+	<ul>
+	  <li><strong>Datasets:</strong> 
+		<a href="https://www.kaggle.com/datasets/equinxx/stock-tweets-for-sentiment-analysis-and-prediction?resource=download&select=stock_tweets.csv" target="_blank">Kaggle Stock Tweets Dataset</a>,
+		<a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest" target="_blank">HuggingFace Twitter-RoBERTa</a>
+	  </li>
+	  <li><strong>Real-Life Tweets:</strong> Collected from Twitter and Kaggle.</li>
+	  <li><strong>Twitter Bird Icon:</strong> 
+		<a href="https://iconduck.com/icons/188247/twitter-bird" target="_blank">Iconduck</a>
+	  </li>
+	  <li><strong>Video Background:</strong> 
+		<a href="https://www.vecteezy.com/free-videos/twitter-logo" target="_blank">Vecteezy</a>
+	  </li>
+	  <li><strong>Code Assistance:</strong> ChatGPT was used for debugging and implementation guidance.</li>
+	</ul>
+  </section>
+  
 {/if}
 </div>
 
@@ -1673,7 +1701,52 @@ let showVideo = true;
 	z-index: 4;
 }
 
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
+.gradient-section {
+  background: linear-gradient(-45deg, #1da1f2, #00c6ff, #6610f2, #00ff87);
+  background-size: 300% 300%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+  padding: 50px 30px;
+  border-radius: 16px;
+  margin: 60px auto;
+  max-width: 900px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.gradient-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #fff;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.gradient-section ul {
+  list-style-type: "🔹 ";
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.gradient-section a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.gradient-section a:hover {
+  color: #ffe600;
+  text-shadow: 0 0 5px #ffe600;
+}
 
 
 	
