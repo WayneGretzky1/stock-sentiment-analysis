@@ -1437,9 +1437,12 @@ let showVideo = true;
 <section class="gradient-section" id="contributions">
 	<h2>🧑‍💻 Contributions</h2>
 	<ul>
-	  <li><strong>Evan, Niketha, Sivapriya:</strong> Dataset finding, cleaning, and analysis</li>
-	  <li><strong>Mohammad, Brock:</strong> Storyboard creation</li>
-	  <li><strong>Lavanya:</strong> Presentation design, documentation, and technical support</li>
+	<li><strong>Brock, Sivapriya, Niketha:</strong> Data Analysis</li>
+	<li><strong>Sivapriya, Niketha, Lavanya:</strong> Data-to-Svelte Integration</li>
+	<li><strong>Evan:</strong> Storyline Drafting & Refinement</li>
+	<li><strong>Mohammad, Brock:</strong> Storyboard, Website Creation</li>
+	<li><strong>Lavanya:</strong> Presentation Slides & Final Polish</li>
+	<li><strong>Everyone:</strong> Floating Help & Coordination</li>	
 	</ul>
   </section>
   
