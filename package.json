@@ -28,6 +28,7 @@
 		"@carbon/charts-svelte": "^1.22.18",
 		"@kurkle/color": "^0.3.4",
 		"chart.js": "^4.4.8",
-		"d3": "^7.9.0"
+		"d3": "^7.9.0",
+		"rollup": "^4.59.0"
 	}
 }
